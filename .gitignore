@@ -1,0 +1,45 @@
+# --- Build Directories ---
+build/
+bin/
+out/
+
+# --- Extern Dependencies ---
+# Ignore the SDK folder entirely because it will be downloaded/extracted by CMake
+extern/ultralight/
+!extern/
+
+# --- IDE & Editor Files ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# --- CMake Artifacts ---
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+
+# --- Python & Environment Files ---
+# Since you're using py7zr and potentially Python for bindings
+__pycache__/
+*.pyc
+*.pyo
+venv/
+env/
+.env
+.venv/
+
+# --- Binary/Library Artifacts ---
+# If you compile any shared/static libs, ignore them
+*.so
+*.dylib
+*.dll
+*.exe
+*.a
+*.lib
